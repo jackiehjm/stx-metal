@@ -51,7 +51,7 @@ override_dh_install:
 
 	# Package pxeboot utilities in /var/pxeboot
 	install -d -m 755 $(ROOT)/var/pxeboot
-	install -p -D -m 700 pxeboot/grubx64.efi $(ROOT)/var/pxeboot
+	install -p -D -m 700 pxeboot/grubaa64.efi $(ROOT)/var/pxeboot
 	install -p -D -m 700 pxeboot/menu.c32 $(ROOT)/var/pxeboot
 	install -p -D -m 700 pxeboot/ldlinux.c32 $(ROOT)/var/pxeboot
 	install -p -D -m 700 pxeboot/libcom32.c32 $(ROOT)/var/pxeboot

@@ -148,16 +148,16 @@ for f in "${file_list[@]}" ; do
     elif [ "${filename}" == "vmlinuz" ] ; then
         path_file1="${pxeboot}/rel-${rel}/bzImage"
         path_file2="${pxefeed}/bzImage"
-    elif [[ "${filename}" == *"rt-amd64.sig"* ]] ; then
+    elif [[ "${filename}" == *"rt-arm64.sig"* ]] ; then
         path_file1="${pxeboot}/rel-${rel}/bzImage-rt.sig"
         path_file2="${pxefeed}/bzImage-rt.sig"
-    elif [[ "${filename}" == *"rt-amd64"* ]] ; then
+    elif [[ "${filename}" == *"rt-arm64"* ]] ; then
         path_file1="${pxeboot}/rel-${rel}/bzImage-rt"
         path_file2="${pxefeed}/bzImage-rt"
-    elif [[ "${filename}" == *"amd64.sig"* ]] ; then
+    elif [[ "${filename}" == *"arm64.sig"* ]] ; then
         path_file1="${pxeboot}/rel-${rel}/bzImage-std.sig"
         path_file2="${pxefeed}/bzImage-std.sig"
-    elif [[ "${filename}" == *"amd64"* ]] ; then
+    elif [[ "${filename}" == *"arm64"* ]] ; then
         path_file1="${pxeboot}/rel-${rel}/bzImage-std"
         path_file2="${pxefeed}/bzImage-std"
     else
@@ -175,8 +175,8 @@ file1="LockDown.efi.sig"
 file2="LockDown.efi"
 file3="bootx64.efi"
 file4="grub.cfg.sig"
-file5="grubx64.efi"
-file6="mmx64.efi"
+file5="grubaa64.efi"
+file6="mmaa64.efi"
 
 file_list=( $(find "${base_path}" \
     -name "${file1}" -o \

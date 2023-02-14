@@ -6,8 +6,7 @@ Homepage: https://www.starlingx.io
 Standards-Version: 4.5.1
 Build-Depends: debhelper-compat (= 13),
  build-info-dev,
- grub2,
- syslinux-common
+ grub2-common
 
 Package: pxe-network-installer
 Architecture: all
