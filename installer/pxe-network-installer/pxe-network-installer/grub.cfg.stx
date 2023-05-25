@@ -8,7 +8,7 @@ set root_part="otaroot"
 set flux_part="fluxdata"
 set rollback_part="_b"
 set ab="1"
-set ostree_console="console=ttyS0,115200"
+set ostree_console="console=ttyAMA0,115200"
 set kernel=vmlinuz
 set kernel_rollback=vmlinuz
 set kernel_params=""
