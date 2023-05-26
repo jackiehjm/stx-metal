@@ -173,7 +173,7 @@ done
 # Other image files
 file1="LockDown.efi.sig"
 file2="LockDown.efi"
-file3="bootx64.efi"
+file3="bootaa64.efi"
 file4="grub.cfg.sig"
 file5="grubaa64.efi"
 file6="mmaa64.efi"
